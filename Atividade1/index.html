@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Musical</title>
+    <link rel="icon" href="iconemsc.ico">
+    <style>
+        body{
+            background-color: rgb(53, 27, 27);
+            font: normal 10pt Arial;
+            text-align: center;
+            color: #ccc;
+        }
+        #esctab{
+            text-align: center;
+        }
+        table{
+
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td{
+            border: 1px solid #ddd;
+            padding: 5px;
+            text-align: center;
+        }
+        th{
+            background-color: #355857;
+        }
+        img{
+            width: 30%;
+            height: auto;
+            border-radius: 7px;
+            border: #ffffff 2px solid;
+            color: #ccc;
+            
+            
+        }
+        input[type="text"], input[type="email"], input[type="tel"]{
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            margin-top: 7px;
+            margin-bottom: 10px;
+        }
+        legend,p{
+            font-size: medium;
+            font: normal 15pt Arial;
+        }
+        video{
+            width: 30%;
+            height: auto;
+            border-radius: 7px;
+            border: #ffffff 2px solid;
+            color: #ccc;
+            
+        }
+        #msc{
+            text-align: center;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Imagem -->
+    <h1>Imagem do Evento:</h1>
+    <div id="imagem">
+    <img src="imgeve.jpeg" alt="Imagem do Evento" width="600" > 
+    </div>
+    <!-- Video -->
+    <h1>Video Promocional do Evento:</h1>
+    <div id="video">
+        <video controls>
+            <source src="videoatv.mp4" type="video/mp4" >
+        </video>
+    </div>
+    <!-- Audio -->
+    <h1>Trecho de uma música da Atração Principal do Evento:</h1>
+    <div id="msc">
+    <audio controls>
+        <source src="audatv.mpeg" type="audio/mp3">
+    </audio>
+    </div>
+    <!-- Tabela de Programação do Evento-->
+     <h1 id="esctab">PROGRAMAÇÃO DO EVENTO</h1>
+<table border="1" align="center">
+    <thead>
+        <tr>
+            <th>Horário</th>
+            <th>Atração</th>
+            <th>Palco</th>
+        </tr>
+        <tbody>
+        <tr>
+            <td>22:00</td>
+            <td>Dj Alok</td>
+            <td>Palco Principal</td>
+        </tr>
+        <tr>
+            <td>23:00</td>
+            <td>Dj Arana</td>
+            <td>Palco Secundário</td>
+        </tr>
+        <tr>
+            <td>00:00</td>
+            <td>Amado Batista</td>
+            <td>Arena</td>
+        </tr>
+        </tbody>
+    </thead>
+</table>
+<!-- Formulario -->
+<h1>
+    Formulário para Inscrição:
+</h1>
+    <form >
+        <legend>Informações para Cadastro</legend>
+        <label for="nome">Nome:</label> <br>
+        <input type="text" id="nome" placeholder="Digite seu Nome..." ><br>
+        <label for="email">Email:</label> <br>
+        <input type="email" id="email" placeholder="Digite seu Email..."><br>
+        <label for="telefone">Telefone:</label> <br>
+        
+        <input type="tel" id="telefone" placeholder="Digite seu Telefone..."><br>
+            <p>Tipo do ingresso:</p>
+            <input type="radio" name="tipo" id="pista">Pista
+            <input type="radio" name="tipo" id="vip">VIP
+            <input type="radio" name="tipo" id="camarote">Camarote
+        </label><br><br>
+        <label ><input type="checkbox" name="notificacao" value="email">Receber notifições por E-mail</label><br><br>
+        <button type="submit">Enviar</button><br>
+    </form>
+</body>
+</html>
