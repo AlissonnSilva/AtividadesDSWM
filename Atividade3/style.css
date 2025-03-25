@@ -22,7 +22,9 @@ header {
     margin-right: 10px;
     margin-bottom: 50px;
 }
-
+.cartao:nth-child(even) .titulos{ /* Cor do título even -> para pares e odd -> para impares */
+    color: #f8f8f8;
+}
 /* Estilo do título */
 .titulos {
     position: absolute;
@@ -33,7 +35,14 @@ header {
     padding: 10px;
     border-radius: 5px;
 }
-
+/*Adiciona uma seta antes de cada titulo*/
+.titulos::before{
+    content: ' --->  ';;
+}
+/*Adiciona um emoji depois de cada titulo*/
+.titulos::after{
+    content: '! 😋';
+}
 /* Parte interna que gira */
 .inner {
     position: relative;
@@ -44,12 +53,10 @@ header {
 }
 
 /* Frente e verso do cartão */
-.frente,
-.verso {
+.frente{
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,6 +66,20 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     background-color: #8d5757;
+}
+.verso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 /* Ajustar o conteúdo da frente */
@@ -83,11 +104,6 @@ header {
     transform: rotateY(180deg);
 }
 
-.container:hover {
-    transform: scale(1.01);
-    transition: 0.5s;
-    box-shadow: 0px 0px 10px 0px #0c0d0e;
-}
 
 .receitas {
     display: grid;
