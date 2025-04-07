@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda - Spotify</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./Recursos/css/estilo.css">
+    <link rel="shortcut icon" href="./Recursos/imagens/favicon.png" type="image/x-icon">
+    <style>
+        /* Estilo geral */
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        h1,
+        h2 {
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #titajuda {
+            font-size: 60px;
+        }
+
+        /* Seção de Introdução */
+        section h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* Perguntas Frequentes */
+        .accordion .card {
+            border: none;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion .card-header {
+            background-color: #d296e4;
+            border-radius: 8px 8px 0 0;
+            padding: 15px;
+        }
+
+        .accordion .btn-link {
+            color: #f5e8e8;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .accordion .btn-link:hover {
+            color: #f9f9f9;
+            font-size: 17px;
+        }
+
+        .accordion .card-body {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+            color: #000000;
+        }
+
+        /* Seção de contato */
+
+        section#contato {
+            background-color: #d296e4;
+            color: #ffffff;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        section#contato p {
+            font-size:20px;
+            margin-bottom: 20px;
+        }
+
+        section#contato ul {
+            list-style: none;
+            /* Remove marcadores da lista */
+            padding: 0;
+        }
+
+        section#contato ul li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        section#contato ul li a {
+            color: #6d479e;
+            
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section#contato ul li a:hover {
+            text-decoration: underline;
+            /* Sublinhar ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="Recursos/imagens/spotify.svg" width="142"></a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                    <i class="fas fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="" class="nav-link">Premium</a></li>
+                        <li class="nav-item"><a href="ajuda.html" class="nav-link">Ajuda</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Baixar</a></li>
+                        <li class="nav-item divisor"></li>
+                        <li class="nav-item"><a href="inscrever-se.html" class="nav-link">Inscrever-se</a></li>
+                        <li class="nav-item"><a href="entrar.html" class="nav-link">Entrar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="mt-5 pt-5">
+        <!-- Seção de Introdução -->
+        <section class="container text-left my-5">
+            <h1 id="titajuda">Ajuda</h1>
+            <!-- Título da página de ajuda -->
+        </section>
+
+        <!-- Seção de Perguntas Frequentes -->
+        <section class="container text-center my-5">
+            <h1>Perguntas Frequentes</h1>
+            <div class="accordion" id="faqAccordion">
+                <!-- Acordeão do Bootstrap para exibir perguntas e respostas -->
+                <div class="card">
+                    <div class="card-header" id="faq1">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1"
+                                aria-expanded="true" aria-controls="collapse1">
+                                Como faço para criar uma conta no Spotify?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Para criar uma conta, clique em "Inscrever-se" no canto superior direito e siga as instruções.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faq2">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Como posso cancelar minha assinatura Premium?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Você pode cancelar sua assinatura acessando as configurações da conta e clicando em
+                            "Cancelar
+                            Assinatura".
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faq3">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                O Spotify é gratuito?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Sim, o Spotify oferece uma versão gratuita com anúncios. Você também pode optar pelo plano
+                            Premium para mais benefícios.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Seção de Contato -->
+        <section id="contato" class="container text-center my-5">
+            <h1>Contato</h1>
+            <p>Se precisar de ajuda, entre em contato conosco pelos canais abaixo:</p>
+            <ul>
+                <li>Email: <a href="">suporte@spotify.com</a></li>
+                <li>Telefone: <a href="">(11)99999 9999</a></li>
+
+            </ul>
+        </section>
+
+        <!-- Rodapé -->
+
+        <footer>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-2">
+                        <img src="./Recursos/imagens/spotify.svg" width="142">
+                    </div>
+                    <div class="col-md-2">
+                        <h4>Company</h4>
+                        <ul class="navbar-nav">
+                            <li><a href="">Sobre</a></li>
+                            <li><a href="">Empregos</a></li>
+                            <li><a href="">Imprensa</a></li>
+                            <li><a href="">Novidades</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h4>Comunidades</h4>
+                        <ul class="navbar-nav">
+                            <li><a href="">Artistas</a></li>
+                            <li><a href="">Devs</a></li>
+                            <li><a href="">Marcas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h4>Links úteis</h4>
+                        <ul class="navbar-nav">
+                            <li><a href="">Ajuda</a></li>
+                            <li><a href="">Presentes</a></li>
+                            <li><a href="">Player da Web</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li>
+                                <a href=""><img src="./Recursos/imagens/facebook.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./Recursos/imagens/twitter.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./Recursos/imagens/instagram.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
