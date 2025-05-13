@@ -1,0 +1,34 @@
+ body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #botao {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #1db954;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #botao:hover {
+            background-color: #14833b;
+        }
+
+        #nome {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        #texto {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
